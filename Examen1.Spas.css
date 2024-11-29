@@ -1,0 +1,106 @@
+/** CSS del Examen 1 HTML y CSS **/
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+}
+html{font-size: 62.5%;}
+body{font-size: 1.6rem;}
+/** Fuente de texto **/
+@font-face{
+    font-family: "Sarcoleta";
+    src: url(./Fuentes/Sarcolenta.ttf);
+}
+body{font-family: "Sarcoleta";}
+/** Decoraciones de texto basicas **/
+.bold{
+    font-weight: bolder;
+}
+.italica{
+    font-style: italic;
+}
+/** Menu Horizontal **/
+.menu{
+    background-color: black;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    padding: 2rem 8rem;
+    margin: 0%;
+}
+.menu a:hover{
+    background-color: olive;
+    color: black;
+}
+/** Imagen Principal **/
+.img img{
+    height: 50%;
+    width: 80%;
+    margin: 5rem 10%;
+    border-radius: 1rem;
+    box-shadow: -0.5rem -0.5rem 0.5rem grey;
+}
+/** Apartado imagenes mini **/
+.mini{
+    width: 80%;
+    margin: auto;
+}
+.mini h1{
+    text-align: center;
+}
+table{
+    background-color: yellowgreen;
+    color: white;
+}
+table td{
+    padding: 2rem 8rem;
+    text-align: center;
+}
+.tabla{
+    display: flex;
+    flex-direction: row;
+    flex: 2 0 auto;
+    width: 65%;
+    float: left;
+    margin: 2rem auto;
+}
+.texto1{
+    margin-left: 2rem;
+}
+.mini1{
+    display: flex;
+    flex-direction: row;
+    flex: 2 0 auto;
+    width: 65%;
+    float: right;
+    margin: 2rem auto;
+}
+.texto2{
+    float: left;
+}
+.mini1 img, .mini2 img{
+    border-radius: 2rem;
+    box-shadow: -0.5rem -0.5rem 0.5rem grey;
+}
+.mini2{
+    display: flex;
+    flex-direction: row;
+    flex: 2 0 auto;
+    width: 65%;
+    float: left;
+    margin: 2rem auto;
+}
+.texto3{
+    margin-left: 2rem;
+}
+/** Media Querry **/
+@media (max-width:60rem){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+    }
+}
